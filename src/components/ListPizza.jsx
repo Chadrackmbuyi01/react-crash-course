@@ -13,11 +13,13 @@ function ListPizza() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">EXPRESS DISH</h1>
-      <ul>
-        {italianPizzas.map((pizza, index) => (
-          <li key={index}>{pizza}</li>
-        ))}
-      </ul>
+      <div className="bg-green-200">
+        <ul>
+          {italianPizzas.map((pizza, index) => (
+            <li key={index}>{pizza}</li>
+          ))}
+        </ul>
+      </div>
       <br />
       <p>Here is an example of a delicious meal:</p>
       <MealCard />
